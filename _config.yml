@@ -1,0 +1,19 @@
+pygments: false
+auto: true
+server: true
+markdown: rdiscount
+title: DicomGrid
+exclude: ['Rakefile']
+navigation:
+- text: Home
+  url: / 
+- text: Associate With Us
+  url: /associate.html
+- text: Media
+  url: /media.html
+- text: Clients
+  url: /clients.html
+- text: Contact Us
+  url: /contact.html
+
+
