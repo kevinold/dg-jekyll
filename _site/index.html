@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>DicomGrid | </title>
+    <title>DicomGrid | DicomGrid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -25,9 +25,86 @@
   <body>
 
     <div class="container">
+
+    <div class="row">
+
+      <!-- logo -->
+      <div class="span4 logo"><a href="/index.html" title="Home"></a></div>
+
+      <div class="span6" id="top-nav">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Regular link</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+          <ul id="menu1" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+          <ul id="menu2" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+          <ul id="menu3" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+
+    </div>
+
+
     <h1>Bootstrap starter template</h1>
       <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
 
+
+
+
+      <!-- footer -->
+      <div class="full_width full_footer">
+      <div class="full_container">
+        <div class="footer">
+          <div class="footer_left">
+            <div class="footer_left_links">
+              <a href="index.html" >Home</a>
+              <a href="privacy-policy.html" >Privacy Policy</a>				</div>
+            <div class="footer_left_links">
+              <a href="solutions.html" >Solutions</a><a href="events.html" >Events</a><a href="terms-of-use.html" >Terms of Use</a>				</div>
+            <div class="footer_left_links">
+              <a href="about-us.html" >About Us</a><a href="press.html" >Press</a><a href="contact-us.html"  class="current">Contact Us</a>				</div>
+            <div class="footer_left_links">
+              <a href="platform.html" >Platform</a>				</div>
+          </div>
+      
+          <div class="footer_right">
+            <div class="social_links">
+              <ul>
+                <li class="twitter"><a href="http://twitter.com/#!/DICOMGrid" target="_blank"></a></li>
+                <li class="facebook"><a href="http://www.facebook.com/dicomgridinc" target="_blank"></a></li>
+                <li class="linkedin"><a href="http://www.linkedin.com/company/dicom-grid" target="_blank"></a></li>
+              </ul>
+            </div>
+            <div class="copy">&copy; Copyright 2012 Dicom Grid. All Rights reserved.</div>
+          </div>
+        </div>
+      </div>
+      </div> <!-- /footer -->
 
     </div> <!-- /container -->
 
@@ -47,6 +124,20 @@
     <script src="/js/bootstrap-collapse.js"></script>
     <script src="/js/bootstrap-carousel.js"></script>
     <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/application.js"></script>
 
+  <!--<script type="text/javascript"> 
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24978737-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>-->
   </body>
 </html>

@@ -716,3 +716,6 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 html,body{background-color:#e6e6e7;}
 body{padding-top:40px;}
 .container,footer{background-color:#fff;}
+.logo{float:left;}
+.logo a{display:block;width:200px;height:110px;background:url('/img/dicom-grid-logo.gif') left top no-repeat;}
+#top-nav{margin-top:35px;}
