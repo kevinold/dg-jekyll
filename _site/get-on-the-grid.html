@@ -1,0 +1,72 @@
+<script src="public/js/jquery.js" type="text/javascript"></script>
+<script src="public/js/jquery.form.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="public/css/styles.css" />
+<div class="lightbox">
+
+	<div class="lightbox_form">
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="myForm">
+      <input type=hidden name="oid" value="00Dd0000000f5WF">
+      <input type=hidden name="retURL" value="http://localhost:4000/thank-you.html">
+      <!--<input type="hidden" name="debug" value=1>-->
+      <!--<input type="hidden" name="debugEmail" value="kold@dicomgrid.com">-->
+			<h1 id="form-title">Tell me more!</h1>
+			
+			<p id="instructions">Please enter your contact information and our team will get right back to you.</p>
+			
+			<div class="form_row">
+				<div class="form_text">
+					<div class="form_name">Email</div>
+					<div class="form_info">(required)</div>
+				</div>
+				<div class="form_input"><input type="text" name="email" /></div>
+			</div>
+			
+			<div class="form_row">
+				<div class="form_text">
+					<div class="form_name">First Name</div>
+					<div class="form_info">(required)</div>
+				</div>
+				<div class="form_input"><input type="text" name="first_name" /></div>
+			</div>
+
+			<div class="form_row">
+				<div class="form_text">
+					<div class="form_name">Last Name</div>
+					<div class="form_info">(required)</div>
+				</div>
+				<div class="form_input"><input type="text" name="last_name" /></div>
+			</div>
+			
+			<div class="form_row">
+				<div class="form_text">
+					<div class="form_name">Phone Number</div>
+					<div class="form_info">(required)</div>
+				</div>
+				<div class="form_input"><input type="text" name="phone" /></div>
+			</div>
+
+			<div class="form_row">
+				<div class="form_text">
+					<div class="form_name">Company</div>
+					<div class="form_info">(optional)</div>
+				</div>
+				<div class="form_input"><input type="text" name="company" /></div>
+			</div>
+			
+	
+			<div class="form_row">
+				<div class="form_submit"><input type="image" src="public/images/submit_form.gif" /></div>
+			</div>
+			
+			<div class="form_row">
+				<div id="output"></div>
+			</div>
+			
+			<input type="hidden" name="website" value="http://www.dicomgrid.com/platform/applications.html" />
+			
+    </form>
+
+	</div>
+
+</div>
+<script src="public/js/a.form.js" type="text/javascript"></script>
