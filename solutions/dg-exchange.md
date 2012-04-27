@@ -1,0 +1,135 @@
+# DG Exchange
+ 
+## Overview
+Secure and intuitive Medical Image Exchange (MIE) enables collaboration between members of a patient’s care team, irrespective of their physical location or access credentials.
+
+Hence a referring physician from outside your hospital group can have the same ability to follow their patient as an internal specialist, and if the patient has to go to external specialist then that specialist can too have immediate access to the relevant studies. 
+
+The Dicom-Grid Medical Image Exchange (DG Exchange) is a secure end to end solution, with an ability to automate the workflow and hence reduce the risk of errors while increasing the speed and the volume of studies handled.
+
+Uploading and downloading studies via your website simply requires the insertion of a few likes of HTML code on your webpage. Equally remote viewing of images simply requires the current generation (HTML5) of web browsers from Microsoft, Google, Apple, or Mozilla.
+
+All that is required for interconnection with in-house PACS and Modalities is a standard Microsoft Windows server (physical or virtual) at each physical location, onto which DG can remotely install DG Gateway. It communicates directly with the local PACS and Modalities. Then transferring them asynchronously to the DG Imagebank, which is located in either the local datacenter (private cloud), or the DG data center in Phoenix, Arizona.
+￼
+## Features and Benefits
+
+DG Exchange solution tightly integrates the six core components of a solution into a single system with a common user interface, terminology, and user credentials. (There is no need to use all six components; individual components can be turned on or off as required.)
+
+### CD handling, remote importing and exporting
+
+DG Exchange allow patients to upload studies directly from their CDs or DVDs via your website, without the need for additional user software, improves the overall experience for the patient, the referring physician, and the entire care team. By immediately notifying via email or text all the care team – from patient, to physician, to specialist, when studies are received, read, and the diagnosis report prepared, the patient is kept up to date on their care, and the time that is wasted if the study cannot be read is minimized.
+
+DG Exchange provides patients with a unique web link to their study via text, email, fax, or printed paper allows them to either remotely view the images or download the study and burn it to disk – or download it directly to their physician’s computer, and hence gives them easy access to their own health records.
+
+Studies can be merged, images added or deleted and demographic data removed or changed.
+
+### Image Routing and Distribution
+
+Moving images between PACS, as well as between PACS and modalities is traditionally solved with point to point IP based data connections – using VPNs if the data has to travel over the public Internet.
+
+There is considerable setup cost and time for each connection, both for the underlying VPN and Firewall modifications, but also to ensure that the data flows correctly between the different systems, which often requires custom developed data mapping rules.
+
+The DG solution avoids the need for VPNs or Firewall modifications. All the data correction and remapping  is done by the DG Imagebank, so the studies simply flow (push or pull) via the local DG Gateway to the cloud, and return to the DG Gateway in the remote location where they are cached and imported into the destination PACS or Modality.
+
+DG’s patented “split-merge” technology ensures a high level of data security by automatically splitting the demographic data from the image data. The demographic data is significantly smaller and so can easily be encrypted and transmitted or stored independently of the image data. When the study is required then the demographic data can be re-inserted at the destination – hence reducing the risk of HIPAA compliance failures.
+
+Studies can also be transferred to and from workshops such as Microsoft Windows and Apple Mac machines – so allowing the use of Dicom Viewers such as OsiriX Imaging Software from Pixmeo, ClearCanvas Workstation, and Merge Healthcare eFilm Mobile.
+
+### Workflow and Quality Assurance
+
+DG offers end to end workflow management and automation to ensure that a high quality result is delivered each and every time, with the minimum of manual intervention, hence reducing costs and maximizing revenue.
+
+The workflow covers from the initial image and study importing from a CD, DVD, web upload, or modality to the demographic conciliation, to the routing, remote viewing, and exporting to CD, DVD, web download, or modality.
+
+Workflows are designed via the web interface, and triggered by a range of inputs, including HL7 data from the RIS (Radiology Information System).
+
+Workflow policies include; duplicate images, detecting and repairing demographic data, study compression (JPEG Baseline, JPEG Lossless or RLE transfer syntaxes)- including variable compression ratios (for lossy compression), minimum retention times, study anonymization, auto-forward, auto-fetch, pre-fetch, auto-route, assignment of studies to work-lists, and notifications.
+
+Notification of events by email or text after any event, including success and failure or any process ensure that the entire care team is able to follow the progress the imaging study and know when their input is required.
+
+### Zero-footprint Image Viewing
+Sharing medical images with the entire care team –from referring physician and patient to medical specialists, such as surgeons is often a time consuming an inefficient process, so often only the diagnosis report is shared. But images are a very powerful way to convey information, especially to the patient, even if they don’t have the training to understand all the detail. So having the surgeon use an iPad to show the patient before surgery what they are going to do is a powerful way of including them.
+
+DG Mobile is DG's secure zero-footprint remote viewer for medical images – it supports a wide range of viewing devices; from iPads to Windows laptops. It has been designed from the ground up to work over limited bandwidth networks - only the relevant images are delivered to the viewer, and a secure connection is used for all data. There is no initial software download required and hence the time to first image is no slowed by the need to first download the viewer.
+
+### Workflow and Quality Assurance
+
+DG offers end to end workflow management and automation to ensure that a high quality result is delivered each and every time, with the minimum of manual intervention, hence reducing costs and maximizing revenue.
+
+The workflow covers from the initial image and study importing from a CD, DVD, web upload, or modality to the demographic conciliation, to the routing, remote viewing, and exporting to CD, DVD, web download, or modality.
+
+Workflows are designed via the web interface, and triggered by a range of inputs, including HL7 data from the RIS (Radiology Information System).
+
+Workflow policies include; duplicate images, detecting and repairing demographic data, study compression (JPEG Baseline, JPEG Lossless or RLE transfer syntaxes)- including variable compression ratios (for lossy compression), minimum retention times, study anonymization, auto-forward, auto-fetch, pre-fetch, auto-route, assignment of studies to work-lists, and notifications.
+
+Notification of events by email or text after any event, including success and failure or any process ensure that the entire care team is able to follow the progress the imaging study and know when their input is required.
+
+### HL7 Reports
+
+Patient Demographic data and the diagnosis reports are normally contained in the RIS (Radiology Information System), rather than in the PACS – which is focused on the studies themselves.
+
+The DG Exchange system pulls radiology reports from the HL7 and combines them with the relevant studies so that they can be moved and accessed as a single item.
+
+### Security, Logging, Access Control, and External APIs
+
+The DG platform provides a uniform access and control model for all components in the DG solution suite – hence ensuring consistent and secure access to medical images and reports.
+
+All users are assigned to particular organizational roles, and each role has an associated security policy, so changing the policy for a particular group of users simply means changing that one role rather than the policy associated with each individual user. Besides reducing the time and effort involved this approach reduces the risk of error and improves the security of the system.
+
+All actions are logged and these logged can be analyzed by action, location, and user.
+
+The DG solution is built from a series of discrete systems, each with their own REST API, which is used to bind the system together. These documented APIs can be used to extend the DG solution, and integrate it with other IT solutions.
+
+## Comparison with Alternative Solutions
+
+DG Exchange is a fully integrated web based solution provided as either a managed service (cloud service) or as an internal web based system.
+
+The problem of moving medical images is well known, and there are a number of alternative solutions to this problem including add-ons and extensions to PACS, an third party cloud based solutions. 
+
+But the most common alternative is CDs, DVD, MO disks, and portable disk drives – all ferried around by express mail or the patient.
+
+DG believes that by providing a suite of solutions that protect and extend existing investments by connecting them together, irrespective of the vendor – and extending the network outside the firewall in a secure and manageable manner to patients, and their physicians, provides healthcare organizations with the best solution to the restraints they currently face.
+
+### PACS comparison
+
+While your PACS has the ability to export and import images from and to other PACS, and even remote enable remote viewing – this has several key limitations:
+
+1. Incompatibilities between different vendors of PACS and Modalities requires “rework” – these can be automatically solved when there is a permanent link between the devices but ad-hoc connections can cause significant manual work both to handle reconciliation with HL7 data, and differences in the implementation of the DICOM standard.
+2. The PACS becomes the server, which is fine when all the users are inside the firewall, but presents significant security issues as any insecurity in the PACS will enable an attacker to use the PACS as a relay to attack other databases behind the firewall.
+3. Using the PACS to process and serve images to additional users puts additional load on the PACS, reducing the performance for the core users.
+4. Serving images from within your firewall puts additional load on your external outbound public (Internet) and private connections – impacting the performance of all your IT systems.
+5. Managing the importing, exporting, and viewing of images from a single PACS is challenging from a user support and security auditing perspectives, but the challenges becomes significantly greater when managing a system of PACS from different vendors – each with their own logging and reporting system and viewer. 
+
+### Alternative Cloud based Image Exchange solutions
+
+DG believes its solution has the following key advantages over alternative cloud based Medical Image Exchange providers:
+
+1. Remotely deployable: The DG Gateway  installs onto a standard Microsoft Windows based server located within the firewall. Once downloaded and installed it simply needs to be pointed at the relevant local PACS and Modalities, and then added to the relevant DG Imagebank. The server can be joined to a domain and managed like any other Microsoft Windows server.
+
+2. No firewall changes normally required. The DG Gateway communicates with the DG Imagebank service using standard (443) ports and protocols (HTTPS) so it does not require changes to the Firewall.
+
+3. Zero-footprint user client (HTML5 enabled web browser) for image uploading and remote image viewing. 
+4. Integrated workflow management automates the process of managing the images and studies and hence reduces errors.
+
+## Application
+
+### Large Hospitals and Community Hospitals:
+
+The US hospital market is consolidating rapidly in response to recent changes in the healthcare laws and competitive environment. Health care systems are expanding their geographic range by buying other hospitals and clinics, while at the same time concentrating their specialists in certain geographic locations. They are also trying to avoid repeating exams that now will not be reimbursed.
+
+In addition the value of referrals in bringing new patients into that healthcare system has risen as the market consolidates and there is a great competition for market share.
+
+Finally, there is significant US government desire to involve patients more deeply in their care, which obviously means sharing medical images.
+
+The D-G Medical Image Exchange solution provides an integrated solution for automatically routing images and studies between PACS and Modalities without the need for VPNs or dedicated connections, it also allows referring physicians to be tightly integrated with the care team so they are able to easy view their patients images. Finally the ability to view an medical image using a mobile device such as an iPad in a uniform manner allows the care team to collaborate without needing to be physically in the same location. 
+
+D-G’s vendor agnostic architecture and open interfaces and APIs is intended to protect and extend existing investments. 
+
+### Mammography Centers
+
+Many mammography centers make the diagnosis on the same machine that does the imaging, and so there may not be a need for a PACS in every location.
+
+The DG Exchange solution can move studies automatically and directly from the modality to any modality for diagnostic reading, as well as providing a retention solution.
+
+The DG workflow includes Image pre-fetch, so if the prior images are located in network then they are pre-fetched, if they are not available then the system automatically emails the patient and after a number of security and privacy checks,  providing her with a number of options for providing the images, including uploading them directly from a CD or DVD, or giving the location of the previous exams.
+
