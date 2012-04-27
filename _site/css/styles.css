@@ -713,9 +713,9 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .hide{display:none;}
 .show{display:block;}
 .invisible{visibility:hidden;}
-html,body{background-color:#e6e6e7;}
+html,body{background-color:#e6e6e7;line-height:normal;}
 .container,footer{background-color:#fff;}
-.container{margin:30px auto;padding:30px;}
+.container{padding:30px;}
 .logo{float:left;}
 .logo a{display:block;width:200px;height:110px;background:url('/img/dicom-grid-logo.gif') left top no-repeat;}
 #top-nav{margin-top:35px;}
@@ -726,3 +726,20 @@ html,body{background-color:#e6e6e7;}
 .nav-tabs .dropdown-menu,.nav-pills .dropdown-menu,.navbar .dropdown-menu{margin-top:0;}
 .navbar .sub-menu:before{border-bottom:7px solid transparent;border-left:none;border-right:7px solid rgba(0, 0, 0, 0.2);border-top:7px solid transparent;left:-7px;top:10px;}
 .navbar .sub-menu:after{border-top:6px solid transparent;border-left:none;border-right:6px solid #fff;border-bottom:6px solid transparent;left:10px;top:11px;left:-6px;}
+.footer{font-family:arial, helvetica;font-size:10px;color:#acacac;padding-top:30px;margin-top:30px;border-top:solid 1px #EDEDED;}
+.footer a{font-family:arial, helvetica;font-size:10px;color:#acacac;text-decoration:none;}
+.footer_inner{width:920px;margin:0 auto;height:inherit;}
+.footer_left{float:left;}
+.footer_left_links{float:left;margin-right:20px;}
+.footer_left_links a{display:block;}
+.footer_right{float:right;width:300px;}
+.social_links{float:left;width:300px;}
+.social_links ul{float:right;}
+.social_links ul li{float:left;margin-left:3px;list-style:none;}
+.social_links a{width:25px;height:25px;display:block;background:url('/img/social_links.gif') left top no-repeat;}
+.twitter a:hover{background-position:0px -25px;}
+.facebook a{background-position:-29px 0px;}
+.facebook a:hover{background-position:-29px -25px;}
+.linkedin a{background-position:-57px 0px;}
+.linkedin a:hover{background-position:-57px -25px;}
+.copy{float:right;width:300px;text-align:right !important;margin-top:10px;}

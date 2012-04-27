@@ -2,13 +2,13 @@
 /* Override some defaults */
 html, body {
   background-color: #e6e6e7;
+  line-height: normal;
 }
 
 .container, footer {
   background-color: #fff;
 }
 .container {
-  margin: 30px auto;
   padding: 30px;
 }
 
@@ -72,3 +72,65 @@ html, body {
 }
 /* End Styles via http://stackoverflow.com/a/10143018 to make TB menus expand by hover */
 
+
+
+/*
+	Footer
+*/
+
+.footer{
+	font-family: arial, helvetica;
+	font-size: 10px;
+	color: #acacac;
+	padding-top: 30px;
+	margin-top: 30px;
+  border-top: solid 1px #EDEDED;
+}
+.footer a{
+	font-family: arial, helvetica;
+	font-size: 10px;
+	color: #acacac;
+	text-decoration: none;
+}
+.footer_inner{
+	width: 920px;
+	margin: 0 auto;
+	height: inherit;
+}
+.footer_left{
+	float: left;
+}
+.footer_left_links{
+	float: left;
+	margin-right: 20px;
+}
+.footer_left_links a{
+	display: block;
+}
+.footer_right{
+	float: right;
+	width: 300px;
+}
+.social_links{
+	float: left;
+	width: 300px;
+}
+.social_links ul{ float: right;}
+.social_links ul li{ float: left; margin-left: 3px; list-style: none;}
+.social_links a{
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: url('/img/social_links.gif') left top no-repeat;
+}
+.twitter a:hover{background-position: 0px -25px;}
+.facebook a{ background-position: -29px 0px;}
+.facebook a:hover{ background-position: -29px -25px;}
+.linkedin a{ background-position: -57px 0px;}
+.linkedin a:hover{ background-position: -57px -25px;}
+.copy{
+	float: right;
+	width: 300px;
+	text-align: right !important;
+	margin-top: 10px;
+}
