@@ -1,0 +1,3 @@
+# DG Import
+
+DG Import provides a secure, scalable and intuitive solution for importing images and studies from a wide range of media (CDs, DVDs, thumb drives), and managing the workflow needed to quality assure the imports, correct demographic data, and import into the PACS.
