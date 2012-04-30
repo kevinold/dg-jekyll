@@ -73,15 +73,17 @@
         <div class="footer">
           <div class="footer_left">
             <div class="footer_left_links">
-              <a href="/index.html" >Home</a>
-              <a href="/privacy-policy.html" >Privacy Policy</a>				</div>
+              <a class="{%if page.nav == 'index'%}active{%endif%}" href="/index.html" >Home</a>
+              <a class="{%if page.nav == 'privacy'%}active{%endif%}" href="/privacy-policy.html" >Privacy Policy</a>				</div>
             <div class="footer_left_links">
-              <a href="/solutions.html" >Solutions</a>
-              <a href="/terms-of-use.html" >Terms of Use</a>				</div>
+              <a class="{%if page.nav == 'solutions'%}active{%endif%}" href="/solutions.html" >Solutions</a>
+              <a class="{%if page.nav == 'terms'%}active{%endif%}" href="/terms-of-use.html" >Terms of Use</a>				</div>
             <div class="footer_left_links">
-              <a href="/about-us.html" >About Us</a><a href="/press.html" >Press</a><a href="/contact-us.html"  class="current">Contact Us</a>				</div>
+              <a class="{%if page.nav == 'about-us'%}active{%endif%}" href="/about-us.html" >About Us</a>
+              <a class="{%if page.nav == 'press'%}active{%endif%}" href="/press.html" >Press</a>
+              <a class="{%if page.nav == 'contact-us'%}active{%endif%}" href="/contact-us.html"  class="current">Contact Us</a>				</div>
             <div class="footer_left_links">
-              <a href="/platform.html" >Platform</a>				</div>
+              <a class="{%if page.nav == 'platform'%}active{%endif%}" href="/platform.html" >Platform</a>				</div>
           </div>
       
           <div class="footer_right">
