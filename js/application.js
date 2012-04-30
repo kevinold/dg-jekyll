@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
   $('.dropdown-toggle').dropdown();
+  $('.carousel').carousel({
+    interval: 7000
+  });
 
   /*$('#myForm').submit(function() {
     $.post({
