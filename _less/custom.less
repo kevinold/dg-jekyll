@@ -1,6 +1,7 @@
 
 @DGBlue: #0080b5;
 @DGLightGray: #e6e6e7;
+@DGDarkGray: #b1b3b7;
 
 
 html, body {
@@ -12,7 +13,7 @@ html, body {
   background-color: #fff;
 }
 .container {
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
 }
 
 .logo{
@@ -26,7 +27,7 @@ html, body {
 }
 
 #top-nav {
-  margin-top:35px;
+  margin-top:30px;
 }
 
 
@@ -76,6 +77,75 @@ html, body {
 /* End Styles via http://stackoverflow.com/a/10143018 to make TB menus expand by hover */
 
 
+/* Top navigation */
+
+.nav {
+  margin-left: 35px;
+}
+.nav > li > a {
+  color: @DGDarkGray;
+  font-size: 16px;
+}
+
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: @white;
+}
+
+.nav-pills > li {
+  margin-left: 10px;
+}
+
+.nav-pills > a {
+  color: @DGDarkGray;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: @DGDarkGray;
+  background-color: @white;
+}
+
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+.nav > li.dropdown.open.active > a:hover {
+  color: @DGDarkGray;
+  background-color: @white;
+  border-color: @white;
+}
+
+// The dropdown menu (ul)
+// ----------------------
+.dropdown-menu {
+  border: none;
+  .box-shadow(0);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+
+  // Links within the dropdown menu
+  a {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: @baseLineHeight;
+    color: @dropdownLinkColor;
+    white-space: nowrap;
+  }
+}
+
+// Hover state
+// -----------
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: @dropdownLinkColorHover;
+  text-decoration: none;
+  background-color: @dropdownLinkBackgroundHover;
+}
+
+
 
 .left_col{
   width: 190px;
@@ -95,6 +165,7 @@ html, body {
   margin-right: 50px;
 	float: left;
 	font-size: 14px;
+  min-height: 700px;
 }
 .middle_col h1{
   color: #666666;
