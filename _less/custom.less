@@ -1,5 +1,8 @@
-/* Copied from bootstrap examples and modified */
-/* Override some defaults */
+
+@DGBlue: #0080b5;
+@DGLightGray: #e6e6e7;
+
+
 html, body {
   background-color: #e6e6e7;
   line-height: normal;
@@ -74,10 +77,69 @@ html, body {
 
 
 
+.left_col{
+  width: 190px;
+  margin-right: 50px;
+	float: left;
+}
+.right_col{
+	width: 190px;
+	float: left;
+}
+.left_col .left_nav li a{
+  color: #0080b5;
+  text-decoration: none;
+}
+.middle_col{
+	width: 480px;
+  margin-right: 50px;
+	float: left;
+	font-size: 14px;
+}
+.middle_col h1{
+  color: #666666;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.middle_col h3{
+  color: #666666;
+  margin-top: 30px;
+}
+.middle_col h2{
+  color: @DGBlue;
+  font-weight: normal;
+  margin-top: 30px;
+}
+.middle_col ol{
+  list-style: decimal;
+  margin: 2em;
+}
+.middle_col ul{
+  list-style: disc;
+}
+.middle_col p, .middle_col li{
+  margin-top: 20px;
+  color: #666666;
+  font-size: 120%;
+}
+.left_nav li {
+  color: #666666;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+}
+.left_nav li:first-child {
+  padding-top: 10px;
+  border-top: 5px solid @DGBlue;
+  list-style: none;
+}
+
+
+
 /*
 	Footer
 */
-
 .footer{
 	font-family: arial, helvetica;
 	font-size: 10px;
