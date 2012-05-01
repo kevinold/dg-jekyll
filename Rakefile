@@ -7,6 +7,11 @@ task :clean do
   cleanup
 end
 
+desc 'Run less'
+task :less do
+  less
+end
+
 desc 'Build site with Jekyll'
 task :build => :clean do
   less
