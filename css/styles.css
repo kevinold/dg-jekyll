@@ -750,7 +750,7 @@ html,body{background-color:#e6e6e7;line-height:normal;}
 .left_nav li{color:#666666;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #ccc;list-style:none;}
 .left_nav li:first-child{padding-top:10px;border-top:5px solid #0080b5;list-style:none;}
 .exec:not(:first-child){margin-top:50px;}
-.exec_name{display:table-cell;vertical-align:bottom;}
+.exec_name{vertical-align:bottom;}
 .exec h2,.exec h3{margin-top:0px;font-weight:normal;}
 .footer{font-family:arial, helvetica;font-size:10px;color:#acacac;padding-top:30px;margin-top:30px;border-top:solid 1px #EDEDED;}
 .footer a{font-family:arial, helvetica;font-size:10px;color:#acacac;text-decoration:none;}
