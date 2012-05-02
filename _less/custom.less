@@ -2,9 +2,11 @@
 @DGBlue: #0080b5;
 @DGLightGray: #e6e6e7;
 @DGDarkGray: #b1b3b7;
+@DGTextColor: #666666;
 
 
 html, body {
+  color: @DGTextColor;
   background-color: #e6e6e7;
   line-height: normal;
 }
@@ -190,7 +192,7 @@ html, body {
   margin-top: 30px;
 }
 .middle_col h3{
-  color: #666666;
+  color: @DGTextColor;
   margin-top: 30px;
 }
 .middle_col ol{
@@ -202,13 +204,11 @@ html, body {
 }
 .middle_col p, .middle_col li{
   margin-top: 20px;
-  color: #666666;
 }
 .left_nav {
   padding-top: 85px;
 }
 .left_nav li {
-  color: #666666;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
