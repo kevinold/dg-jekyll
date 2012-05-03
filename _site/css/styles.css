@@ -4276,7 +4276,6 @@ footer {
 }
 .nav-pills > a {
   background-color: #ffffff;
-  color: #b1b3b7;
 }
 .nav-pills > .active > a,
 .footer_left_links .active,
@@ -4306,7 +4305,7 @@ footer {
   clear: both;
   font-weight: normal;
   line-height: 18px;
-  color: #333333;
+  color: #1b81b3;
   white-space: nowrap;
 }
 .dropdown-menu li > a:hover,
