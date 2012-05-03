@@ -4189,7 +4189,7 @@ a:hover {
   color: #57b1dd;
 }
 a.active {
-  color: #bebebe;
+  color: #666666;
 }
 .container,
 footer {
@@ -4272,7 +4272,7 @@ footer {
 .nav > li > a:hover {
   text-decoration: none;
   background-color: #ffffff;
-  color: #bebebe;
+  color: #666666;
 }
 .nav-pills > a {
   background-color: #ffffff;
@@ -4281,7 +4281,7 @@ footer {
 .nav-pills > .active > a,
 .footer_left_links .active,
 .nav-pills > .active > a:hover {
-  color: #bebebe;
+  color: #666666;
   background-color: #ffffff;
 }
 .nav-tabs .open .dropdown-toggle,
