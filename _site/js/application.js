@@ -33,5 +33,8 @@ $(document).ready(function() {
   }
 
   $('#tellMeMoreForm [name=website]').val(getUrlVars().page);
+
+  // Add active class to left nav
+  $('.left_nav li a[href$="/' + location.pathname.split("/").pop() + '"]').addClass('active');
 });
 

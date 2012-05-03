@@ -1,17 +1,34 @@
+@DGDarkBlue: #1b81b3;
+@DGLightBlue: #7cb3ca;
+@DGGray: #bebebe;
+
+// Links
+// -------------------------
+@linkColor:             @DGDarkBlue;
+@linkColorHover:        #57b1dd;
 
 @DGBlue: #0080b5;
 @DGLightGray: #e6e6e7;
 @DGDarkGray: #b1b3b7;
 @DGTextColor: #666666;
 
-@BoxBlue: #1b81b3;
-@BoxLightBlue: #7cb3ca;
-@BoxGray: #bebebe;
-
 html, body {
   color: @DGTextColor;
   background-color: #e6e6e7;
   line-height: normal;
+}
+
+a, a:visited {
+  color: @linkColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @linkColorHover;
+}
+
+a.active {
+  color: @DGGray;
 }
 
 .container, footer {
@@ -90,7 +107,6 @@ html, body {
 }
 /* End Styles via http://stackoverflow.com/a/10143018 to make TB menus expand by hover */
 
-
 /* Top navigation */
 
 .nav-tabs > li > a, .nav-pills > li > a {
@@ -99,30 +115,31 @@ html, body {
 }
 
 .nav > li > a {
-  color: @DGDarkGray;
   font-size: 14px;
 }
 
 .nav > li > a:hover {
   text-decoration: none;
   background-color: @white;
+  color: @DGGray;
 }
 
 .nav-pills > a {
+  background-color: @white;
   color: @DGDarkGray;
 }
 
-.footer_left_links .active,
 .nav-pills > .active > a,
+.footer_left_links .active,
 .nav-pills > .active > a:hover {
-  color: @linkColor;
+  color: @DGGray;
   background-color: @white;
 }
 
 .nav-tabs .open .dropdown-toggle,
 .nav-pills .open .dropdown-toggle,
 .nav > li.dropdown.open.active > a:hover {
-  color: @DGDarkGray;
+  color: @linkColorHover;
   background-color: @white;
   border-color: @white;
 }
@@ -153,9 +170,9 @@ html, body {
 .dropdown-menu li > a:hover,
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorHover;
+  color: @linkColorHover;
   text-decoration: none;
-  background-color: @dropdownLinkBackgroundHover;
+  background-color: @white;
 }
 
 .navbar-inner {
@@ -178,7 +195,7 @@ html, body {
   padding-top:55px;
 }
 .left_col .left_nav li a{
-  color: #0080b5;
+  //color: #0080b5;
   text-decoration: none;
 }
 .middle_col{
@@ -275,13 +292,13 @@ html, body {
 }
 
 .blue_bg {
-  background-color: @BoxBlue;
+  background-color: @DGDarkBlue;
 }
 .light_blue_bg {
-  background-color: @BoxLightBlue;
+  background-color: @DGLightBlue;
 }
 .gray_bg {
-  background-color: @BoxGray;
+  background-color: @DGGray;
 }
 
 /*
@@ -298,7 +315,6 @@ html, body {
 .footer a{
 	font-family: arial, helvetica;
 	font-size: 10px;
-	color: #acacac;
 	text-decoration: none;
 }
 .footer_inner{
