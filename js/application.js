@@ -27,6 +27,16 @@ $(document).ready(function() {
     interval: 7000
   });
 
+  // Add/Remove open class to top nav dropdown li
+  $('li.dropdown').hover(
+    function () {
+      $(this).addClass("open");
+    },
+    function () {
+      $(this).removeClass("open");
+    }
+  );
+
   // add page to tellMeMore url
   if ($('#tellMeMore')) {
     $('#tellMeMore').attr('href', $('#tellMeMore').attr('href') + '?page=' + document.URL.split('/').pop());
