@@ -4400,6 +4400,10 @@ footer {
   left: 15px;
   font-size: 18px;
 }
+#tellMeMore {
+  color: #ffffff;
+  text-decoration: none;
+}
 .hp_box {
   float: left;
   position: relative;

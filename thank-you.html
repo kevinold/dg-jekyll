@@ -1,13 +1,26 @@
-<link rel="stylesheet" type="text/css" href="public/css/styles.css" />
-<div class="lightbox">
+---
+layout: 
+title: Thank You
+nav: 
+---
 
-	<div class="lightbox_form">
-		<form>
-      <h1>Thank you!</h1>
-    </form>
-  </div>
+{% include _header.html %}
+
+<div class="left_col"> 
+  <ul class="left_nav">
+    <li><a href="/thank-you.html">Thank You</a></li>
+  </ul>
 </div>
 
-<script type="text/javascript">
-setTimeout(function() { parent.$.fancybox.close(); }, 1000);
-</script>
+<div class="middle_col">
+
+    <h1>Thank You!</h1>
+    <p>Someone will contact you soon.</p>
+
+</div>
+
+<div class="right_col">
+</div>
+
+
+{% include _footer.html %}

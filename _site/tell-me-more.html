@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>DG Mobile | DicomGrid</title>
+    <title>Tell Me More | DicomGrid</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,7 +32,7 @@
       <div id="top-nav">
       <ul class="nav nav-pills">
         <li class=""><a href="/index.html">Home</a></li>
-        <li class="dropdown active">
+        <li class="dropdown ">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Solutions</a>
           <ul id="menu1" class="dropdown-menu">
             <li><a href="/solutions/dg-exchange.html">DG Exchange</a></li>
@@ -71,80 +71,50 @@
 
 <div class="left_col"> 
   <ul class="left_nav">
-    <li><a href="/solutions/dg-exchange.html">DG Exchange</a></li>
-    <li><a href="/solutions/dg-trials.html">DG Trials</a></li>
-    <li><a href="/solutions/dg-retention.html">DG Retention</a></li>
-    <li><a href="/solutions/dg-import.html">DG Import</a></li>
-    <li><a href="/solutions/dg-pmr.html">DG PMR</a></li>
-    <li><a href="/solutions/dg-mobile.html">DG Mobile</a></li>
+    <li><a href="/tell-me-more.html">Tell Me More</a></li>
   </ul>
 </div>
 
 <div class="middle_col">
-    <img alt="DG Mobile" src="/img/solutions/dgMobileHead.gif"/>
 
-<img src="/img/solutions/dgMobileImage.jpg"/>
+    <h1>Tell Me More</h1>
 
-<h2 id='overview'>Overview</h2>
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="tellMeMoreForm">
+      <input type=hidden name="oid" value="00Dd0000000f5WF">
+      <input type=hidden name="retURL" value="http://localhost:4000/thank-you.html">
+      <!--<input type="hidden" name="debug" value=1>-->
+      <!--<input type="hidden" name="debugEmail" value="kold@dicomgrid.com">-->
+			
+			<p id="instructions">Please enter your contact information and our team will get right back to you.  Note: all fields are required.</p>
+			
+			<label for="email">Email</label>
+			<input type="text" name="email" />
+			
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" />
 
-<p>Sharing medical images with the entire care team –from referring physician and patient to medical specialists, such as surgeons is often a time consuming an inefficient process, so often only the diagnosis report is shared. But images are a very powerful way to convey information, especially to the patient, even if they don’t have the training to understand all the detail. So having the surgeon use an iPad to show the patient before surgery what they are going to do is a powerful way of including them.</p>
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" />
+			
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" />
 
-<p>DG Mobile is DG&#8217;s secure zero-footprint remote viewer for medical images – it supports a wide range of viewing devices; from iPads to Windows laptops. It has been designed from the ground up to work over limited bandwidth networks - only the relevant images are delivered to the viewer, and a secure connection is used for all data. There is no initial software download required and hence the time to first image is much faster than other products on the market (many of which need a Java download, download the whole image, and do not use a secure connection - hence putting patient data at risk).</p>
+      <label for="company">Company</label>
+      <input type="text" name="company" />
 
-<p>But the most important part of the DG Mobile viewer is the workflow and the security that lies behind the viewer software. It ensures that the remote viewing is tightly integrated with the whole medical image management process, including HL7 reports, irrespective of which Modality or PACS stores the image and study.</p>
+      <br/>
+		  <input type="submit" class="btn" value="Submit" />
 
-<p>Equally the unified security model ensures a consistently secure access to the patient data.</p>
+			<div id="output"></div>
+			
+			<input type="hidden" name="website" value="http://www.dicomgrid.com/platform/applications.html" />
+			
+    </form>
 
-<h2 id='fetures_and_benefits'>Features and Benefits</h2>
-
-<h3 id='workflow_and_quality_assurance'>Workflow and Quality Assurance</h3>
-
-<p>Mobile Image viewing is most useful when it is used to accelerate the delivery the care that a patient needs – so the underlying workflow management is critically important.</p>
-
-<p>DG offers end to end workflow management and automation to ensure that a high quality result is delivered each and every time, with the minimum of manual intervention, hence reducing costs and maximizing revenue.</p>
-
-<p>Workflows are designed via the web interface, and triggered by a range of inputs, including HL7 data from the RIS (Radiology Information System).</p>
-
-<p>Notification of events by email or text after any event, including success and failure or any process ensure that the entire care team is able to follow the progress the imaging study and know when their input is required.</p>
-
-<h3 id='hl7_reports'>HL7 Reports</h3>
-
-<p>Patient Demographic data and the diagnosis reports are normally contained in the RIS (Radiology Information System), rather than in the PACS – which is focused on the studies themselves.</p>
-
-<p>The DG Exchange system pulls radiology reports from the HL7 and combines them with the relevant studies so that they can be moved and accessed as a single item from the Mobile viewer.</p>
-
-<h3 id='security_logging_access_control_and_external_apis'>Security, Logging, Access Control, and External APIs</h3>
-
-<p>The DG platform provides a uniform access and control model for all components in the DG solution suite – hence ensuring consistent and secure access to medical images and reports.</p>
-
-<p>All users are assigned to particular organizational roles, and each role has an associated security policy, so changing the policy for a particular group of users simply means changing that one role rather than the policy associated with each individual user. Besides reducing the time and effort involved this approach reduces the risk of error and improves the security of the system.</p>
-
-<p>All actions are logged and these logged can be analyzed by action, location, and user.</p>
-
-<p>The DG solution is built from a series of discrete systems, each with their own REST API, which is used to bind the system together. These documented APIs can be used to extend the DG solution, and integrate it with other IT solutions.</p>
-
-<h2 id='comparison_with_alternative_solutions'>Comparison with Alternative Solutions</h2>
-
-<p>There are a number of alternative mobile or zero-footprint viewers.</p>
-
-<p>The key points of differentiation are;</p>
-
-<ol>
-<li>Support for secure connectivity – so the image data is sent across a secure data link ensuring HIPAA compliance even if the mobile viewer is using a non secure network.</li>
-
-<li>Only the relevant part of the image is sent to the remote viewer so reducing the time to first image, and reducing the amount of data sent - hence reducing cellular charges.</li>
-
-<li>Only the image is sent to the remote viewer, there is no significant extra data sent - which slows down the process, and increases the transmission charges.</li>
-</ol>
 
 </div>
 
 <div class="right_col">
-
-<div class="gray_bg">
-  <span><a id="tellMeMore" href="/tell-me-more.html">Tell me more...</a></span>
-</div>
-
 </div>
 
 
@@ -158,7 +128,7 @@
               <a class="" href="/index.html" >Home</a>
               <a class="" href="/privacy-policy.html" >Privacy Policy</a>				</div>
             <div class="footer_left_links">
-              <a class="active" href="/solutions/dg-exchange.html" >Solutions</a>
+              <a class="" href="/solutions/dg-exchange.html" >Solutions</a>
               <a class="" href="/terms-of-use.html" >Terms of Use</a>				</div>
             <div class="footer_left_links">
               <a class="" href="/about-us.html" >About Us</a>

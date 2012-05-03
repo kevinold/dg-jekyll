@@ -1,0 +1,58 @@
+---
+layout: 
+title: Tell Me More
+nav: 
+---
+
+{% include _header.html %}
+
+<div class="left_col"> 
+  <ul class="left_nav">
+    <li><a href="/tell-me-more.html">Tell Me More</a></li>
+  </ul>
+</div>
+
+<div class="middle_col">
+
+    <h1>Tell Me More</h1>
+
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="tellMeMoreForm">
+      <input type=hidden name="oid" value="00Dd0000000f5WF">
+      <input type=hidden name="retURL" value="http://localhost:4000/thank-you.html">
+      <!--<input type="hidden" name="debug" value=1>-->
+      <!--<input type="hidden" name="debugEmail" value="kold@dicomgrid.com">-->
+			
+			<p id="instructions">Please enter your contact information and our team will get right back to you.  Note: all fields are required.</p>
+			
+			<label for="email">Email</label>
+			<input type="text" name="email" />
+			
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" />
+
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" />
+			
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" />
+
+      <label for="company">Company</label>
+      <input type="text" name="company" />
+
+      <br/>
+		  <input type="submit" class="btn" value="Submit" />
+
+			<div id="output"></div>
+			
+			<input type="hidden" name="website" value="http://www.dicomgrid.com/platform/applications.html" />
+			
+    </form>
+
+
+</div>
+
+<div class="right_col">
+</div>
+
+
+{% include _footer.html %}

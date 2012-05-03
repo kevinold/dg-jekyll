@@ -5,13 +5,5 @@ $(document).ready(function() {
     interval: 7000
   });
 
-  /*$('#myForm').submit(function() {
-    $.post({
-      url: 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
-      dataType: 'json',
-      data: $('#myForm').serialize(),
-    });
-  });*/
-		
 });
 
