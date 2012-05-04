@@ -80,7 +80,8 @@ end
 
 def js(opts = '')
   Dir::mkdir('js') unless File.directory?('js')
-  sh 'cat js/jquery.js js/bootstrap*.js js/application.js | uglifyjs -o js/scripts.min.js'
+  sh 'cat js/jquery.js js/bootstrap*.js | uglifyjs -o js/scripts.min.js'
+  sh 'uglifyjs -o js/application.min.js js/application.js'
 end
 
 desc "deploy basic rack app to heroku"
