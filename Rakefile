@@ -7,6 +7,11 @@ task :clean do
   cleanup
 end
 
+desc 'Run js'
+task :js do
+  js
+end
+
 desc 'Run less'
 task :less do
   less
@@ -70,7 +75,12 @@ end
 
 def less(opts = '')
   Dir::mkdir('css') unless File.directory?('css')
-  sh 'lessc _less/styles.less > css/styles.css'
+  sh 'lessc _less/styles.less > css/styles.css -compress'
+end
+
+def js(opts = '')
+  Dir::mkdir('js') unless File.directory?('js')
+  sh 'cat js/jquery.js js/bootstrap*.js js/application.js | uglifyjs -o js/scripts.min.js'
 end
 
 desc "deploy basic rack app to heroku"
