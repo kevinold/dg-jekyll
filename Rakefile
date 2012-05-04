@@ -20,6 +20,7 @@ end
 desc 'Build site with Jekyll'
 task :build => :clean do
   less
+  js
   system('jekyll --no-server')
   puts "build complete"
 end
@@ -27,6 +28,7 @@ end
 desc 'Start server with --auto'
 task :server => :clean do
   less
+  js
   jekyll('--server --auto')
 end
 
