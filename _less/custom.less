@@ -112,6 +112,8 @@ a.active {
 .nav-tabs > li > a, .nav-pills > li > a {
   padding-right: 0;
   padding-left: 32px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .nav > li > a {
@@ -129,7 +131,7 @@ a.active {
 }
 
 .nav-pills > .active > a,
-.footer_left_links .active,
+.footer_left .active,
 .nav-pills > .active > a:hover {
   color: @DGTextColor;
   background-color: @white;
@@ -307,7 +309,7 @@ a.active {
 	font-family: arial, helvetica;
 	font-size: 10px;
 	color: #acacac;
-	padding-top: 30px;
+	padding-top: 15px;
 	margin-top: 30px;
   border-top: solid 1px #EDEDED;
 }
@@ -321,15 +323,23 @@ a.active {
 	margin: 0 auto;
 	height: inherit;
 }
-.footer_left{
+.footer_left {
 	float: left;
-}
-.footer_left_links{
-	float: left;
-	margin-right: 20px;
-}
-.footer_left_links a{
-	display: block;
+
+  li:not(:first-child) {
+    border-left: 1px solid @DGGray;
+    padding-left: 20px;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+
+  a {
+    display: block;
+  }
 }
 .footer_right{
 	float: right;
