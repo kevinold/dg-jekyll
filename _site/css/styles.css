@@ -760,7 +760,7 @@ a.active{color:#666666;}
 .right_col div span{position:absolute;bottom:15px;left:15px;font-size:18px;}
 #tellMeMore{color:#ffffff;text-decoration:none;}
 .hp_box{float:left;position:relative;width:300px;height:150px;color:#fff;margin-left:20px;margin-top:50px;}
-.hp_box span{position:absolute;bottom:15px;left:15px;font-size:18px;}
+.hp_box span{position:absolute;bottom:15px;left:15px;right:15px;font-size:18px;}.hp_box span a{color:#fff;text-decoration:none;}
 .blue_bg{background-color:#1b81b3;}
 .light_blue_bg{background-color:#7cb3ca;}
 .gray_bg{background-color:#bebebe;}
