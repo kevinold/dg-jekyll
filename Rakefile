@@ -32,9 +32,14 @@ task :server => :clean do
   jekyll('--server --auto')
 end
 
-desc 'Build and deploy'
-task :deploy => :build do
+desc 'Build and deploy to Staging'
+task :deploy_stag => :build do
   sh 'rsync -rtzh --progress --delete _site/ ubuntu@uidev.dicomgrid.com:/home/ubuntu/marketing/'
+end
+
+desc 'Build and deploy to Production'
+task :deploy_prod => :build do
+  sh 'rsync -rtzh --progress --delete _site/ kold@weblpi01:/usr/share/nginx/www/corpsite/'
 end
 
 desc 'Check links for site already running on localhost:4000'
