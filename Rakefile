@@ -87,7 +87,7 @@ end
 
 def js(opts = '')
   Dir::mkdir('js') unless File.directory?('js')
-  sh 'cat js/jquery.js js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js | uglifyjs -o js/scripts.min.js'
+  sh 'cat js/jquery.js js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/underscore-min.js | uglifyjs -o js/scripts.min.js'
   sh 'uglifyjs -o js/application.min.js js/application.js'
 end
 

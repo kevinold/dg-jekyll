@@ -22,6 +22,14 @@ function getUrlVars()
 
 $(document).ready(function() {
 
+  var videos = ['0bymXYUYmwE','QptCT672CAc','KHXuQt6HMbA'];
+  var rand = Math.floor(Math.random()*3);
+  var featured_video_img = 'homeVideo' + rand + '.png';
+  $('#video_image').attr("src","/img/" + featured_video_img);
+
+  var video_iframe = _.template('<iframe width="560" height="315" src="http://www.youtube.com/embed/<%= video_code %>?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>', { video_code: videos[rand] });
+  $('#VideoModal .modal-body').html(video_iframe);
+  
   $('.dropdown-toggle').dropdown();
   $('.carousel').carousel({
     interval: 7000
