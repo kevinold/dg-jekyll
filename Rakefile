@@ -39,7 +39,7 @@ end
 
 desc 'Build and deploy to Production'
 task :deploy_prod => :build do
-  sh 'rsync -rtzh --exclude='.*' --progress --delete _site/ kold@weblpi01:/usr/share/nginx/www/corpsite/'
+  sh 'rsync -rtzh --exclude=".*" --progress _site/ kold@weblpi01:/usr/share/nginx/www/corpsite/'
 end
 
 desc 'Check links for site already running on localhost:4000'
