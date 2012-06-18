@@ -721,7 +721,7 @@ a.active{color:#666666;}
 .container{padding:20px 30px 30px 30px;}
 .header{padding-bottom:20px;}
 .logo{float:left;}
-.logo a{display:block;width:200px;height:40px;margin-top:13px;background:url('/img/dicom-grid-logoShorter.gif') left top no-repeat;}
+.logo a{display:block;width:200px;height:80px;margin-top:13px;background:url('/img/logoMarketingSite.gif') left top no-repeat;}
 #top-nav{margin-top:15px;float:right;}
 #dg-suite-hp{margin-top:115px;float:left;}
 .sidebar-nav{padding:9px 0;}
