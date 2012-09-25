@@ -2,7 +2,7 @@ pygments: false
 auto: false
 server: false
 markdown: rdiscount
-title: DicomGrid
+title: DICOM GRID, Inc.
 exclude: ['Rakefile']
 navigation:
 - text: Home
