@@ -67,5 +67,37 @@ $(document).ready(function() {
 
   // Add active class to left nav
   $('.left_nav li a[href*="' + location.pathname + '"]').addClass('active');
+
+  $('#tellMeMoreForm').validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        },
+        first_name: {
+          minlength: 2,
+          required: true
+        },
+        last_name: {
+          minlength: 2,
+          required: true
+        },
+        phone: {
+          minlength: 2,
+          required: true
+        },
+        company: {
+          minlength: 2,
+          required: true
+        }
+      },
+      highlight: function(label) {
+        $(label).closest('.control-group').addClass('error');
+      },
+      success: function(label) {
+        label.closest('.control-group').removeClass('error');
+      }
+  });
+
 });
 
