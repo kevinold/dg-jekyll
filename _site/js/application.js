@@ -68,7 +68,7 @@ $(document).ready(function() {
   // Add active class to left nav
   $('.left_nav li a[href*="' + location.pathname + '"]').addClass('active');
 
-  $('#tellMeMoreForm').validate({
+  $('#tellMeMoreForm, #requestDemoForm').validate({
       rules: {
         email: {
           required: true,

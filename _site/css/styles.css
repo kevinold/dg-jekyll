@@ -745,7 +745,10 @@ a.active{color:#666666;}
 .left_col .left_nav li a{text-decoration:none;}
 .middle_col{width:480px;margin-right:50px;float:left;font-size:14px;min-height:700px;}
 .middle_col h1{color:#0080b5;font-weight:normal;margin-bottom:30px;}
-.middle_col h2{color:#0080b5;font-weight:normal;margin-top:30px;}
+.middle_col h2,.left_col h2{color:#0080b5;font-weight:normal;margin-top:30px;}
+.left_col h3{color:#0080b5;font-weight:normal;margin-top:30px;}
+.right_col h3{color:#0080b5;font-weight:normal;margin-bottom:10px;}
+.left_col h3:first-child{margin-top:40px;padding-top:10px;border-top:5px solid #0080b5;list-style:none;}
 .middle_col h3{color:#666666;margin-top:30px;}
 .middle_col ol{list-style:decimal;margin:2em;}
 .middle_col ul{list-style:disc;}

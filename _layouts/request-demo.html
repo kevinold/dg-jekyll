@@ -1,0 +1,61 @@
+{% include _header.html %}
+
+<div class="left_col" style="margin-left: 25px;"> 
+  <h3>Request a demo</h3>
+    
+    <br />
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="requestDemoForm">
+      <input type=hidden name="oid" value="00D60000000K2Nz">
+      <input type=hidden name="retURL" value="http://www.dicomgrid.com/thank-you.html">
+      <!--<input type="hidden" name="debug" value=1>-->
+      <!--<input type="hidden" name="debugEmail" value="kold@dicomgrid.com">-->
+
+      <div class="control-group">
+			<label for="email">Email</label>
+			<input type="text" name="email" />
+      </div>
+			
+      <div class="control-group">
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" />
+      </div>
+
+      <div class="control-group">
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" />
+      </div>
+			
+      <div class="control-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" />
+      </div>
+
+      <div class="control-group">
+      <label for="company">Company</label>
+      <input type="text" name="company" />
+      </div>
+
+      <br/>
+		  <input type="submit" class="btn btn-primary" value="Send Request" />
+
+			<div id="output"></div>
+			
+			<input type="hidden" name="website" value="" />
+			
+    </form>
+</div>
+
+<div class="middle_col" style="width: 450px;">
+    {{content}}
+</div>
+
+<div class="right_col" style="padding-top: 35px;">
+
+<div class="">
+  <h3>What our customers are saying...</h3>
+  <a data-toggle="modal" href="#VideoModal" target="_blank"><img id="video_image" data-video-num="1" src="/img/solutions/videoSolutions2.png" /></a>
+</div>
+
+</div>
+
+{% include _footer.html %}
