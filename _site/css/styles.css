@@ -713,6 +713,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .hide{display:none;}
 .show{display:block;}
 .invisible{visibility:hidden;}
+.dg-blue{color:#0080b5;}
 html,body{color:#666666;background-color:#e6e6e7;line-height:normal;}
 a,a:visited{color:#1b81b3;text-decoration:none;}
 a:hover{color:#57b1dd;}
@@ -750,6 +751,7 @@ a.active{color:#666666;}
 .right_col h3{color:#0080b5;font-weight:normal;margin-bottom:10px;}
 .left_col h3:first-child{margin-top:40px;padding-top:10px;border-top:5px solid #0080b5;list-style:none;}
 .middle_col h3{color:#666666;margin-top:30px;}
+.rq-demo h3{color:#0080b5;font-weight:normal;margin-top:30px;}
 .middle_col ol{list-style:decimal;margin:2em;}
 .middle_col ul{list-style:disc;}
 .middle_col p,.middle_col li{margin-top:20px;}
