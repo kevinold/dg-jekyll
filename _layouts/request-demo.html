@@ -1,7 +1,7 @@
 {% include _header.html %}
 
 <div class="left_col" style="margin-left: 25px;"> 
-  <h3>Request a demo</h3>
+  <h3>Request a demo {%if page.loc %} at {{ page.loc }}{%endif%}</h3>
     
     <br />
 		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="requestDemoForm">
@@ -40,7 +40,7 @@
 
 			<div id="output"></div>
 			
-			<input type="hidden" name="website" value="" />
+			<input type="hidden" name="website" value="{{ page.loc }}" />
 			
     </form>
 </div>
