@@ -751,13 +751,15 @@ a.active{color:#666666;}
 .right_col h3{color:#0080b5;font-weight:normal;margin-bottom:10px;}
 .left_col h3:first-child{margin-top:40px;padding-top:10px;border-top:5px solid #0080b5;list-style:none;}
 .middle_col h3{color:#666666;margin-top:30px;}
-.rq-demo h3{color:#0080b5;font-weight:normal;margin-top:30px;}
 .middle_col ol{list-style:decimal;margin:2em;}
 .middle_col ul{list-style:disc;}
 .middle_col p,.middle_col li{margin-top:20px;}
 .left_nav{padding-top:85px;}
 .left_nav li{margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #ccc;list-style:none;}
 .left_nav li:first-child{padding-top:10px;border-top:5px solid #0080b5;list-style:none;}
+.rq-demo p{font-size:16px;}
+.rq-demo li{margin-top:10px;}
+.rq-demo h3{color:#0080b5;font-weight:normal;margin-top:30px;}
 .exec:not(:first-child){margin-top:50px;}
 .exec_name{vertical-align:bottom;}
 .exec h2,.exec h3{margin-top:0px;font-weight:normal;}
