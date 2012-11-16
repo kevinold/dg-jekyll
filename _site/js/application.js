@@ -23,7 +23,7 @@ function getUrlVars()
 $(document).ready(function() {
 
   // determine videos for home and solutions pages displayed in a modal
-  var videos = ['0bymXYUYmwE','QptCT672CAc','KHXuQt6HMbA'];
+  var videos = ['0bymXYUYmwE','QptCT672CAc','KHXuQt6HMbA', '_Ql_Zwodirc'];
   var video_code;
 
   // check if data-video-num (only defined on solutions pages)
