@@ -1,0 +1,41 @@
+
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="requestDemoForm">
+      <input type=hidden name="oid" value="00D60000000K2Nz">
+      <input type=hidden name="retURL" value="http://www.dicomgrid.com/thank-you.html">
+      <!--<input type="hidden" name="debug" value=1>-->
+      <!--<input type="hidden" name="debugEmail" value="kold@dicomgrid.com">-->
+
+			
+      <div class="control-group">
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" />
+      </div>
+
+      <div class="control-group">
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" />
+      </div>
+
+      <div class="control-group">
+			<label for="email">Email</label>
+			<input type="text" name="email" />
+      </div>
+			
+      <div class="control-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" />
+      </div>
+
+      <div class="control-group">
+      <label for="company">Company</label>
+      <input type="text" name="company" />
+      </div>
+
+      <br/>
+		  <input type="submit" class="btn btn-primary" value="Send Request" />
+
+			<div id="output"></div>
+			
+			<input type="hidden" name="website" value="{{ page.loc }}" />
+			
+    </form>

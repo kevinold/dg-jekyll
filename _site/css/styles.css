@@ -714,6 +714,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 .dg-blue{color:#0080b5;}
+.dg-gray{color:#666666;}
 html,body{color:#666666;background-color:#e6e6e7;line-height:normal;}
 a,a:visited{color:#1b81b3;text-decoration:none;}
 a:hover{color:#57b1dd;}
